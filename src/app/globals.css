@@ -1,26 +1,66 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+.col1{
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  font-size: medium;
+  color: white;
+  font-weight: bold;
+}
+.col2{
+  background-color: blue;
+  text-align: center;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  font-size: medium;
+  color: white;
+  font-weight: bold;
+}
+.col3{
+  background-color: green;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: medium;
+  color: white;
+  font-weight: bold;
+}
+.col4{
+  background-color:yellow;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  font-size: medium;
+  color: white;
+  font-weight: bold;
+}
+.col5{
+  background-color:purple;
+  height: 100px;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  font-size: medium;
+  color: white;
+  font-weight: bold;
+}
+.col6{
+  background-color: maroon;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  font-size: medium;
+  color: white;
+  font-weight: bold;
+}
+
