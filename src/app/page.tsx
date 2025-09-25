@@ -1,14 +1,27 @@
+'use client';
+import { useState } from "react";
 export default function Home() {
+  const [count, setCount] = useState(0);
+  const handleIncrementClick = () => {
+    console.log("Increment button clicked");
+    setCount(count + 1);
+  }
+
+  const handleDecrementClick = () => {
+    console.log("Decrement button clicked");
+    setCount(count -1);
+  }
   return (
     <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">      
-      <h1 className="text-primary py-2 my-4 text-center text-sm-start">Welcome to Sangeetha's Browser.</h1> 
+      <h1 className="text-primary py-2 my-4 text-center text-sm-start">Welcome to Sangeetha's Browser Using Bootstrap.</h1> 
+      <h2 className="mb-4">Current Count: {count}</h2>
         <div className="row">
           <div className="col-sm-6">
             <div className="card">
               <div className="card-body">
                 <h5 className="card-title">Count Increment</h5>
                   <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <button className="btn btn-success">Click</button>
+                <button className="btn btn-success" onClick={handleIncrementClick}>Click</button>
               </div>
             </div>
           </div>
@@ -17,7 +30,7 @@ export default function Home() {
               <div className="card-body">
                 <h5 className="card-title">Count Decrement</h5>
                  <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <button className="btn btn-primary">Click</button>
+                <button className="btn btn-primary" onClick={handleDecrementClick}>Click</button>
               </div>
             </div>
           </div>
