@@ -205,8 +205,10 @@ const ReactForm = () => {
           type='file' 
           id='resume' 
           name='resume' 
-          onChange={(e)=>handleChange(e)} 
-          value={values.resume}
+          onChange={(e)=> { const file = e.target.files ? e.target.files[0] : null;
+          setValues({...values, resume: file});
+          setErrors({...errors, resume: ''});}} 
+          // value={values.resume}
           required
         />
         {errors.resume && <span className='error'>{errors.resume}</span>}

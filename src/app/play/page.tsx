@@ -5,6 +5,7 @@ const PlayComponent = () => {
   return (
     <div>
         <h1 className='title'>useState and useEffect </h1>
+        
     </div>
   )
 }
